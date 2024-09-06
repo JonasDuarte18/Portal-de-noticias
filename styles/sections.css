@@ -1,7 +1,19 @@
 #featured {
-  img{
+  img {
     height: 100%;
-    object-fit:  cover;
+    object-fit: cover;
     border-radius: 4px;
+  }
+  .card {
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      inset: 0;
+      background: linear-gradient(180deg, transparent 0%, #020617 100%);
+    }
   }
 }
